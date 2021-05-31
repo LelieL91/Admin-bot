@@ -106,7 +106,7 @@ Create a discord application from [discord developers](https://discord.com/devel
  * `thumbnail_image_url` &mdash; You can insert an image link to get custom thumbnail for all embed discord messages
  * `footer` &mdash; You can insert a footer message to display as footer for all embed discord messages
  * `ownerid` &mdash; You can insert an admin's or bot owner's client id to lock botinfo for administrator or bot owner
- ___
+___
 
 ### FAQ
 
