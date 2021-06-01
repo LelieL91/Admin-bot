@@ -35,7 +35,7 @@ module.exports = async (client) => {
 
         for (i = 0; i < embsl; i++) {
             embld[i] = new MessageEmbed().setColor(client.color);
-            if (i == 0) embld[i].setTitle('Server Status').setThumbnail(client.thumbnail);
+            if (i == 0) embld[i].setTitle('Server Status').setURL(client.config.webfronturl).setThumbnail(client.thumbnail);
 
             for (g = 0; g < pages; g++) {
                 if (infos[0][count]) {
