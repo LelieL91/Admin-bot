@@ -232,6 +232,131 @@ module.exports = {
         return [nm, authurl];
     },
 
+    getmode(type, gname) {
+        let alias;
+            switch (type) {
+                case "aliens":
+                    alias = "Extinction"
+                    break;
+                case "arena":
+                    alias = "Arena"
+                    break;
+                case "ball":
+                    alias = "Uplink"
+                    break;
+                case "blitz":
+                    alias = "Blitz"
+                    break;
+                case "conf":
+                    alias = "Kill Confirmed"
+                    break;
+                case "cranked":
+                    alias = "Cranked"
+                    break;
+                case "ctf":
+                    alias = "Capture The Flag"
+                    break;
+                case "dd":
+                    alias = "Demolition"
+                    break;
+                case "dem":
+                    alias = "Demolition"
+                    break;
+                case "dm":
+                    alias = "Free For All"
+                    break;
+                case "dom":
+                    alias = "Domination"
+                    break;
+                case "grind":
+                    alias = "Grind"
+                    break;
+                case "grnd":
+                    alias = "Drop Zone"
+                    break;
+                case "gtnw":
+                    alias = "Global Thermo-Nuclear War"
+                    break;
+                case "gun":
+                    alias = "Gun Game"
+                    break;
+                case "hp":
+                    alias = "Hardpoint"
+                    break;
+                case "hq":
+                    alias = "Headquaters"
+                    break;
+                case "horde":
+                    alias = "Safeguard"
+                    break;
+                case "infect":
+                    alias = "Infected"
+                    break;
+                case "jugg":
+                    alias = "Juggernaut"
+                    break;
+                case "koth":
+                    if (gname == 'T6') alias = "Hardpoint";
+                    else alias = "Headquarters";
+                    break;
+                case "oic":
+                    alias = "One In The Chamber"
+                    break;
+                case "oneflag":
+                    alias = "One-Flag CTF"
+                    break;
+                case "sab":
+                    alias = "Sabotage"
+                    break;
+                case "sas":
+                    alias = "Sticks & Stones"
+                    break;
+                case "sd":
+                    alias = "Search and Destroy"
+                    break;
+                case "shrp":
+                    alias = "Sharpshooter"
+                    break;
+                case "siege":
+                    alias = "Reinforce"
+                    break;
+                case "sotf":
+                    alias = "Hunted"
+                    break;
+                case "sotf_ffa":
+                    alias = "Hunted FFA"
+                    break;
+                case "sr":
+                    alias = "Search and Rescue"
+                    break;
+                case "tdef":
+                    alias = "Team Defender"
+                    break;
+                case "tdm":
+                    alias = "Team Deathmatch"
+                    break;
+                case "tjugg":
+                    alias = "Team Juggernaut"
+                    break;
+                case "twar":
+                    if (gname == 'SHG1') alias = "Momentum";
+                    else alias = "War";
+                    break;
+                case "war":
+                    alias = "Team Deathmatch"
+                    break;
+                case "zstandard":
+                    alias = "Zombies"
+                    break;
+                case "zclassic":
+                    alias = "Zombies"
+                    break;
+                default:
+                    alias = type;
+            }
+            return [alias];
+    },
+
     getmap(console, gname) {
         let alias, map;
         if (gname == "IW3") {
@@ -655,6 +780,10 @@ module.exports = {
                 case "mp_terminal_cls":
                     alias = "Terminal";
                     map = 'https://static.wikia.nocookie.net/callofduty/images/6/68/Terminal_Loading_Screen_MW3.png/revision/latest?cb=20120826091508';
+                    break;
+                case "mp_rust":
+                    alias = "Rust";
+                    map = "https://static.wikia.nocookie.net/callofduty/images/3/33/Rust.jpg/revision/latest?cb=20100720174413";
                     break;
                 case "mp_highrise":
                     alias = "Highrise";
