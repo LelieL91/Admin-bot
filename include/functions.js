@@ -974,12 +974,20 @@ module.exports = {
                     map = 'https://static.wikia.nocookie.net/callofduty/images/0/03/Downfall_Loadscreen_WaW.png/revision/latest?cb=20121128143425';
                     break;
                 case "mp_hangar":
-                    alias = "Hanger";
+                    alias = "Hangar";
                     map = 'https://static.wikia.nocookie.net/callofduty/images/b/be/Hanger.jpg/revision/latest?cb=20100703080146';
                     break;
                 case "mp_makin":
                     alias = "Makin";
                     map = 'https://static.wikia.nocookie.net/callofduty/images/f/fa/Makin.jpg/revision/latest?cb=20110710131317';
+                    break;
+                case "mp_makin_day":
+                    alias = "Makin Day";
+                    map = 'https://static.wikia.nocookie.net/callofduty/images/9/93/Loadscreen_mp_makin_day.jpg/revision/latest?cb=20110710131610';
+                    break;
+                case "mp_seelow":
+                    alias = "Seelow";
+                    map = 'https://static.wikia.nocookie.net/callofduty/images/6/6e/Seelow.jpg/revision/latest?cb=20100703080653';
                     break;
                 case "mp_outskirts":
                     alias = "Outskirts";
